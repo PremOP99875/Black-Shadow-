@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esports Team Registration</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            text-align: center;
+        }
+
+        .form-container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background: #111;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #00ffcc;
+        }
+
+        h2 {
+            color: #00ffcc;
+            text-shadow: 0 0 5px #00ffcc;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .optional {
+            opacity: 0.7;
+        }
+
+        .submit-btn {
+        background-color: cyan;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .submit-btn:active {
+        background-color: red;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Team Registration</h2>
+
+        <label>Team Name:</label>
+        <input type="text" name="teamname" required>
+
+        <label>Team Leader Email ID:</label>
+        <input type="email" name="email" required>
+
+        <label>Mobile Number:</label>
+        <input type="tel" name="mobile" required>
+
+        <h3 style="color: #00ffcc;">Player Details:</h3>
+
+        <label>Player 1 Name:</label>
+        <input type="text" name="player1" required>
+
+        <label>Player 1 ID:</label>
+        <input type="text" name="player1_id" required>
+
+        <label>Player 2 Name:</label>
+        <input type="text" name="player2" required>
+
+        <label>Player 2 ID:</label>
+        <input type="text" name="player2_id" required>
+
+        <label>Player 3 Name:</label>
+        <input type="text" name="player3" required>
+
+        <label>Player 3 ID:</label>
+        <input type="text" name="player3_id" required>
+
+        <label>Player 4 Name:</label>
+        <input type="text" name="player4" required>
+
+        <label>Player 4 ID:</label>
+        <input type="text" name="player4_id" required>
+
+        <label class="optional">Player 5 Name (Optional):</label>
+        <input type="text" name="player5">
+
+        <label class="optional">Player 5 ID (Optional):</label>
+        <input type="text" name="player5_id">
+        <!--Sumbit button-->
+        <input type="submit" value="Register Team" class="submit-btn">
+
+    </div>
+
+</body>
+</html>
